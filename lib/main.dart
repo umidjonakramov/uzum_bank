@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:uzum_bank/features/auth/presentation/pages/enter_password/enter_password.dart';
-import 'package:uzum_bank/features/auth/presentation/pages/enter_phone_number/enter_phone_number.dart';
+import 'package:uzum_bank/features/auth/presentation/pages/splash/splash_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,8 +17,10 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      initialRoute: 'enter_password',
-      routes: {'enter_password': (context) => const EnterPhoneNumberScreen()},
+      initialRoute: 'splash',
+      routes: {
+        'splash': (context) =>  SplashPage()
+      },
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'package:uzum_bank/core/app_colors/app_colors.dart';
+import 'package:uzum_bank/features/auth/presentation/widgets/custom_button.dart';
 import 'package:uzum_bank/features/auth/presentation/widgets/text_field.dart';
 
 class EnterPhoneNumberScreen extends StatefulWidget {
@@ -49,6 +50,7 @@ class _EnterPhoneNumberScreenState extends State<EnterPhoneNumberScreen> {
               const SizedBox(height: 15,),
               CustomTextField(maskFormatter: mask, phoneNumberController: phoneNumberController,),
               const Spacer(),
+              CustomButton('Continue')
         
             ],
           ),
