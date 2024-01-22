@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:uzum_bank/features/auth/presentation/pages/enter_phone_number/enter_phone_number.dart';
+import 'package:uzum_bank/features/main/presentation/page/dashboard/dashboard.dart';
 
 class SplashPage extends StatefulWidget {
   // const SplashPage({required Key key}) : super(key: key);
@@ -21,7 +22,7 @@ class _SplashPageState extends State<SplashPage> with SingleTickerProviderStateM
     _controller.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
         Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => EnterPhoneNumberScreen()),
+          MaterialPageRoute(builder: (context) => DashboardPage()),
         );
       }
     });
